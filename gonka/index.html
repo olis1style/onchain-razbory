@@ -8,7 +8,7 @@
 <meta property="og:title" content="Кто скупает Wrapped Gonka">
 <meta property="og:description" content="Три связанных кошелька держат 23,4% токена и ещё $636K наготове. Все адреса и суммы проверены ончейн.">
 <meta property="og:type" content="article">
-<link rel="stylesheet" href="../assets/style.css?v=3">
+<link rel="stylesheet" href="../assets/style.css?v=4">
 </head>
 <body>
 
@@ -56,9 +56,7 @@
 
 <figure>
   <img src="../screenshots/gonka-arkham-buyer.png" alt="Страница кошелька 0xa06ad2e0 в Arkham Intelligence с разметкой">
-  <figcaption><b>Страница этого кошелька в Arkham.</b> Портфель на $213 тысяч, из них больше половины —
-  WGNK, купленный за последние трое суток. Каждая следующая покупка в серии проходила дороже
-  предыдущей: он не искал цену, а набирал объём.</figcaption>
+  <figcaption>Открыть <a href="https://intel.arkm.com/explorer/address/0xa06ad2e0339375124d255f1fab201964ef707e18">этот кошелёк в Arkham</a></figcaption>
 </figure>
 
 <h2>Откуда пришли деньги</h2>
@@ -68,19 +66,16 @@
 
 <figure>
   <img src="../screenshots/gonka-arkham-hub.png" alt="Страница раздающего кошелька 0x3176f330 в Arkham с разметкой переводов">
-  <figcaption><b>Раздающий кошелёк.</b> На одном экране видна вся цепочка: деньги заходят
-  с Binance, оттуда $30 000 уходят покупателю и $500 000 — на отдельный адрес.
-  Метка «Jocy Lin (IOSG Ventures)?» стоит со знаком вопроса — так Arkham помечает догадки нейросети.</figcaption>
+  <figcaption>Открыть <a href="https://intel.arkm.com/explorer/address/0x3176f330533f88d1cf300f2ebeadde28495656cf">раздающий кошелёк в Arkham</a></figcaption>
 </figure>
 
 <figure>
   <img src="../screenshots/gonka-arkham-cash.png" alt="Кошелёк 0xBdC903f1 с балансом 500 473 USDT в Arkham">
-  <figcaption><b>Тот самый адрес с деньгами.</b> $500 473 в USDT лежат с 16 июля без единой сделки.
-  Оба входящих перевода — с раздающего кошелька: сначала $100 на пробу, следом полмиллиона.</figcaption>
+  <figcaption>Открыть <a href="https://intel.arkm.com/explorer/address/0xBdC903f111439e0AE193B33cbfe4143b7ed62BdE">адрес с деньгами в Arkham</a></figcaption>
 </figure>
 
 <div class="graph">
-<svg viewBox="0 0 940 560" xmlns="http://www.w3.org/2000/svg" font-family="ui-monospace,Menlo,monospace">
+<svg viewBox="0 0 940 604" xmlns="http://www.w3.org/2000/svg" font-family="ui-monospace,Menlo,monospace">
   <defs>
     <marker id="ay" markerWidth="10" markerHeight="10" refX="9" refY="3.2" orient="auto">
       <path d="M0,0 L9,3.2 L0,6.4 z" fill="#ffc85c"/></marker>
@@ -92,88 +87,84 @@
       <path d="M0,0 L9,3.2 L0,6.4 z" fill="#5d6784"/></marker>
   </defs>
 
-  <!-- рамка кластера -->
-  <rect x="286" y="8" width="646" height="440" rx="16" fill="none" stroke="#2b3555" stroke-dasharray="6 5"/>
-  <text x="300" y="28" fill="#5d6784" font-size="10" letter-spacing="1.5">ОДИН ОПЕРАТОР · 23,39% ВСЕГО WGNK</text>
+  <rect x="286" y="8" width="646" height="500" rx="16" fill="none" stroke="#2b3555" stroke-dasharray="6 5"/>
+  <text x="300" y="26" fill="#5d6784" font-size="10" letter-spacing="1.5">ОДИН ОПЕРАТОР &#183; 23,39% ВСЕГО WGNK</text>
 
-  <!-- стрелки хаб → дети -->
-  <path d="M232 262 C268 262 262 92 300 92" fill="none" stroke="#ff5c7a" stroke-width="2.6" marker-end="url(#ar)"/>
-  <path d="M232 278 C268 278 266 248 300 248" fill="none" stroke="#ffc85c" stroke-width="2.6" marker-end="url(#ay)"/>
-  <path d="M232 296 C268 296 264 400 300 400" fill="none" stroke="#5d6784" stroke-width="2.2"
+  <path d="M232 275 C268 275 262 90 300 90" fill="none" stroke="#ff5c7a" stroke-width="2.6" marker-end="url(#ar)"/>
+  <path d="M232 296 C268 296 266 257 300 257" fill="none" stroke="#ffc85c" stroke-width="2.6" marker-end="url(#ay)"/>
+  <path d="M232 320 C268 320 264 427 300 427" fill="none" stroke="#5d6784" stroke-width="2.2"
         stroke-dasharray="6 5" marker-end="url(#agr)"/>
 
-  <text x="294" y="66" text-anchor="end" fill="#ff8ba3" font-size="10.5" font-weight="700">$100 тест → $500 000</text>
-  <text x="294" y="80" text-anchor="end" fill="#8b96b0" font-size="9.5">16 июля</text>
-  <text x="294" y="220" text-anchor="end" fill="#ffc85c" font-size="10.5" font-weight="700">$30 000</text>
-  <text x="294" y="234" text-anchor="end" fill="#8b96b0" font-size="9.5">24 июля</text>
-  <text x="294" y="362" text-anchor="end" fill="#8b96b0" font-size="10" font-weight="700">связь по Arkham</text>
-  <text x="294" y="376" text-anchor="end" fill="#66708c" font-size="9.5">не переподтверждена</text>
+  <text x="294" y="56" text-anchor="end" fill="#ff8ba3" font-size="10.5" font-weight="700">$100 тест &#8594; $500 000</text>
+  <text x="294" y="70" text-anchor="end" fill="#8b96b0" font-size="9.5">16 июля</text>
+  <text x="294" y="226" text-anchor="end" fill="#ffc85c" font-size="10.5" font-weight="700">$30 000</text>
+  <text x="294" y="240" text-anchor="end" fill="#8b96b0" font-size="9.5">24 июля</text>
+  <text x="294" y="386" text-anchor="end" fill="#8b96b0" font-size="10" font-weight="700">связь по Arkham</text>
+  <text x="294" y="400" text-anchor="end" fill="#66708c" font-size="9.5">не переподтверждена</text>
 
-  <!-- ХАБ -->
-  <rect x="16" y="212" width="216" height="132" rx="12" fill="#1a1424" stroke="#6b4a8f" stroke-width="1.8"/>
-  <text x="124" y="238" text-anchor="middle" fill="#c9a8ff" font-size="12" font-weight="700">РАЗДАЮЩИЙ КОШЕЛЁК</text>
-  <text x="124" y="256" text-anchor="middle" fill="#e8edf7" font-size="9.5">0x3176f330533f88d1cf30</text>
-  <text x="124" y="269" text-anchor="middle" fill="#e8edf7" font-size="9.5">0f2ebeadde28495656cf</text>
-  <line x1="34" y1="282" x2="214" y2="282" stroke="#33294a"/>
-  <text x="124" y="300" text-anchor="middle" fill="#8b96b0" font-size="9.5">активен с декабря 2019</text>
-  <text x="124" y="316" text-anchor="middle" fill="#8b96b0" font-size="9.5">метка Arkham: «Jocy Lin,</text>
-  <text x="124" y="329" text-anchor="middle" fill="#66708c" font-size="9.5">IOSG?» — догадка нейросети</text>
+  <rect x="16" y="225" width="216" height="150" rx="12" fill="#1a1424" stroke="#6b4a8f" stroke-width="1.8"/>
+  <text x="124" y="249" text-anchor="middle" fill="#c9a8ff" font-size="12" font-weight="700">РАЗДАЮЩИЙ КОШЕЛЁК</text>
+  <text x="124" y="267" text-anchor="middle" fill="#e8edf7" font-size="9.5">0x3176f330533f88d1cf30</text>
+  <text x="124" y="280" text-anchor="middle" fill="#e8edf7" font-size="9.5">0f2ebeadde28495656cf</text>
+  <line x1="34" y1="293" x2="214" y2="293" stroke="#33294a"/>
+  <text x="124" y="311" text-anchor="middle" fill="#c9a8ff" font-size="9.5">Arkham: «Jocy Lin</text>
+  <text x="124" y="324" text-anchor="middle" fill="#c9a8ff" font-size="9.5">(IOSG Ventures)?»</text>
+  <text x="124" y="340" text-anchor="middle" fill="#66708c" font-size="9">знак вопроса = догадка</text>
+  <text x="124" y="352" text-anchor="middle" fill="#66708c" font-size="9">нейросети, не факт</text>
+  <text x="124" y="368" text-anchor="middle" fill="#8b96b0" font-size="9.5">активен с декабря 2019</text>
 
-  <!-- кошелёк с кэшем -->
-  <rect x="300" y="42" width="270" height="100" rx="11" fill="#1d1116" stroke="#7a2d3f" stroke-width="1.6"/>
-  <text x="316" y="66" fill="#ff8ba3" font-size="12" font-weight="700">КОШЕЛЁК БЕЗ ЕДИНОЙ СДЕЛКИ</text>
-  <text x="316" y="84" fill="#c3cbdd" font-size="9.5">0xBdC903f111439e0AE193B33cbfe</text>
-  <text x="316" y="97" fill="#c3cbdd" font-size="9.5">4143b7ed62BdE</text>
-  <text x="316" y="120" fill="#e8edf7" font-size="13" font-weight="700">$500 473 USDT</text>
-  <text x="316" y="134" fill="#8b96b0" font-size="9.5">лежат 11 дней, покупок ноль</text>
+  <rect x="300" y="30" width="270" height="120" rx="11" fill="#1d1116" stroke="#7a2d3f" stroke-width="1.6"/>
+  <text x="316" y="54" fill="#ff8ba3" font-size="12" font-weight="700">КОШЕЛЁК БЕЗ ЕДИНОЙ СДЕЛКИ</text>
+  <text x="316" y="72" fill="#c3cbdd" font-size="9.5">0xBdC903f111439e0AE193B33cbfe</text>
+  <text x="316" y="85" fill="#c3cbdd" font-size="9.5">4143b7ed62BdE</text>
+  <text x="316" y="102" fill="#8b96b0" font-size="9.5">Arkham: метки нет, имени нет</text>
+  <text x="316" y="126" fill="#e8edf7" font-size="13" font-weight="700">$500 473 USDT</text>
+  <text x="316" y="141" fill="#8b96b0" font-size="9.5">лежат 11 дней, покупок ноль</text>
 
-  <!-- покупатель -->
-  <rect x="300" y="196" width="270" height="104" rx="11" fill="#1b1410" stroke="#8a6a22" stroke-width="1.6"/>
-  <text x="316" y="220" fill="#ffc85c" font-size="12" font-weight="700">ПОКУПАТЕЛЬ</text>
-  <text x="316" y="238" fill="#c3cbdd" font-size="9.5">0xa06ad2e0339375124d255f1fab</text>
-  <text x="316" y="251" fill="#c3cbdd" font-size="9.5">201964ef707e18</text>
-  <text x="316" y="274" fill="#e8edf7" font-size="13" font-weight="700">651 377 WGNK · 10,95%</text>
-  <text x="316" y="288" fill="#8b96b0" font-size="9.5">7 покупок, продаж нет</text>
+  <rect x="300" y="195" width="270" height="125" rx="11" fill="#1b1410" stroke="#8a6a22" stroke-width="1.6"/>
+  <text x="316" y="219" fill="#ffc85c" font-size="12" font-weight="700">ПОКУПАТЕЛЬ</text>
+  <text x="316" y="237" fill="#c3cbdd" font-size="9.5">0xa06ad2e0339375124d255f1fab</text>
+  <text x="316" y="250" fill="#c3cbdd" font-size="9.5">201964ef707e18</text>
+  <text x="316" y="267" fill="#ffc85c" font-size="9.5">Arkham: «cryptochaoswar» (OpenSea)</text>
+  <text x="316" y="291" fill="#e8edf7" font-size="13" font-weight="700">651 377 WGNK &#183; 10,95%</text>
+  <text x="316" y="306" fill="#8b96b0" font-size="9.5">7 покупок, продаж нет</text>
 
-  <!-- закупщик -->
-  <rect x="300" y="352" width="270" height="104" rx="11" fill="#111726" stroke="#2a3350" stroke-width="1.4"/>
-  <text x="316" y="376" fill="#9fb6e0" font-size="12" font-weight="700">ПЕРВЫЙ ЗАКУПЩИК</text>
-  <text x="316" y="394" fill="#c3cbdd" font-size="9.5">0x244186297b43ba43c92d68efe7</text>
-  <text x="316" y="407" fill="#c3cbdd" font-size="9.5">8c04170fbc0b10</text>
-  <text x="316" y="430" fill="#e8edf7" font-size="13" font-weight="700">249 092 WGNK + $136 207</text>
-  <text x="316" y="444" fill="#8b96b0" font-size="9.5">купил в июне, докупать перестал</text>
+  <rect x="300" y="365" width="270" height="125" rx="11" fill="#111726" stroke="#2a3350" stroke-width="1.4"/>
+  <text x="316" y="389" fill="#9fb6e0" font-size="12" font-weight="700">ПЕРВЫЙ ЗАКУПЩИК</text>
+  <text x="316" y="407" fill="#c3cbdd" font-size="9.5">0x244186297b43ba43c92d68efe7</text>
+  <text x="316" y="420" fill="#c3cbdd" font-size="9.5">8c04170fbc0b10</text>
+  <text x="316" y="437" fill="#8b96b0" font-size="9.5">Arkham: метки нет, имени нет</text>
+  <text x="316" y="461" fill="#e8edf7" font-size="13" font-weight="700">249 092 WGNK + $136 207</text>
+  <text x="316" y="476" fill="#8b96b0" font-size="9.5">купил в июне, докупать перестал</text>
 
-  <!-- стрелка закупщик -> третий -->
-  <path d="M578 412 L654 412" fill="none" stroke="#3ddc97" stroke-width="2.4" marker-end="url(#ag)"/>
-  <text x="616" y="390" text-anchor="middle" fill="#3ddc97" font-size="9.5">создал адрес</text>
-  <text x="616" y="402" text-anchor="middle" fill="#3ddc97" font-size="9.5">и оплатил газ</text>
+  <path d="M578 257 L654 257" fill="none" stroke="#ffc85c" stroke-width="2.4" marker-end="url(#ay)"/>
+  <text x="616" y="235" text-anchor="middle" fill="#ffc85c" font-size="9.5">&#8776; $115 000</text>
+  <text x="616" y="247" text-anchor="middle" fill="#ffc85c" font-size="9.5">в рынок</text>
 
-  <!-- третий держатель -->
-  <rect x="662" y="352" width="258" height="104" rx="11" fill="#101d18" stroke="#2a6b52" stroke-width="1.4"/>
-  <text x="678" y="376" fill="#3ddc97" font-size="12" font-weight="700">ТРЕТИЙ ДЕРЖАТЕЛЬ</text>
-  <text x="678" y="394" fill="#c3cbdd" font-size="9.5">0xbd3ca5a43f72e45faf4b1428</text>
-  <text x="678" y="407" fill="#c3cbdd" font-size="9.5">32110842113dc9f8</text>
-  <text x="678" y="430" fill="#e8edf7" font-size="13" font-weight="700">490 900 WGNK · 8,25%</text>
-  <text x="678" y="444" fill="#8b96b0" font-size="9.5">кроме WGNK и газа — ничего</text>
+  <rect x="662" y="195" width="258" height="125" rx="11" fill="#111726" stroke="#2a3350" stroke-width="1.4"/>
+  <text x="678" y="219" fill="#9fb6e0" font-size="12" font-weight="700">ПУЛ UNISWAP V3</text>
+  <text x="678" y="237" fill="#c3cbdd" font-size="9.5">0x203EE836d417CF944133bbdd</text>
+  <text x="678" y="250" fill="#c3cbdd" font-size="9.5">2c62B4BC7388C55D</text>
+  <text x="678" y="267" fill="#9fb6e0" font-size="9.5">Arkham: Uniswap V3 Pool (0x203)</text>
+  <text x="678" y="291" fill="#e8edf7" font-size="13" font-weight="700">55,34% всего WGNK</text>
+  <text x="678" y="306" fill="#8b96b0" font-size="9.5">ликвидность $811K</text>
 
-  <!-- покупатель -> пул -->
-  <path d="M578 256 L654 256" fill="none" stroke="#ffc85c" stroke-width="2.4" marker-end="url(#ay)"/>
-  <text x="616" y="234" text-anchor="middle" fill="#ffc85c" font-size="9.5">≈ $115 000</text>
-  <text x="616" y="246" text-anchor="middle" fill="#ffc85c" font-size="9.5">в рынок</text>
+  <path d="M578 427 L654 427" fill="none" stroke="#3ddc97" stroke-width="2.4" marker-end="url(#ag)"/>
+  <text x="616" y="405" text-anchor="middle" fill="#3ddc97" font-size="9.5">создал адрес</text>
+  <text x="616" y="417" text-anchor="middle" fill="#3ddc97" font-size="9.5">и оплатил газ</text>
 
-  <!-- пул -->
-  <rect x="662" y="196" width="258" height="104" rx="11" fill="#111726" stroke="#2a3350" stroke-width="1.4"/>
-  <text x="678" y="220" fill="#9fb6e0" font-size="12" font-weight="700">ПУЛ UNISWAP V3</text>
-  <text x="678" y="238" fill="#c3cbdd" font-size="9.5">0x203EE836d417CF944133bbdd</text>
-  <text x="678" y="251" fill="#c3cbdd" font-size="9.5">2c62B4BC7388C55D</text>
-  <text x="678" y="274" fill="#e8edf7" font-size="13" font-weight="700">55,34% всего WGNK</text>
-  <text x="678" y="288" fill="#8b96b0" font-size="9.5">ликвидность $825K</text>
+  <rect x="662" y="365" width="258" height="125" rx="11" fill="#101d18" stroke="#2a6b52" stroke-width="1.4"/>
+  <text x="678" y="389" fill="#3ddc97" font-size="12" font-weight="700">ТРЕТИЙ ДЕРЖАТЕЛЬ</text>
+  <text x="678" y="407" fill="#c3cbdd" font-size="9.5">0xbd3ca5a43f72e45faf4b1428</text>
+  <text x="678" y="420" fill="#c3cbdd" font-size="9.5">32110842113dc9f8</text>
+  <text x="678" y="437" fill="#8b96b0" font-size="9.5">Arkham: метки нет, имени нет</text>
+  <text x="678" y="461" fill="#e8edf7" font-size="13" font-weight="700">490 900 WGNK &#183; 8,25%</text>
+  <text x="678" y="476" fill="#8b96b0" font-size="9.5">кроме WGNK и газа — ничего</text>
 
-  <!-- итог -->
-  <rect x="16" y="470" width="904" height="76" rx="11" fill="#12101a" stroke="#33253f"/>
-  <text x="36" y="496" fill="#c6cfe2" font-size="12" font-weight="700">Итого у трёх адресов: 1 391 369 WGNK — 23,39% выпуска, около $267 000 по текущей цене.</text>
-  <text x="36" y="516" fill="#9c8fb0" font-size="11.5">Рядом не потрачено $636 680 в стейблкоинах — это больше, чем стоит вся уже набранная позиция,</text>
-  <text x="36" y="532" fill="#9c8fb0" font-size="11.5">и почти в четыре раза больше суточного оборота токена.</text>
+  <rect x="16" y="520" width="904" height="76" rx="11" fill="#12101a" stroke="#33253f"/>
+  <text x="36" y="546" fill="#c6cfe2" font-size="12" font-weight="700">Итого у трёх адресов: 1 391 369 WGNK — 23,39% выпуска, около $267 000 по текущей цене.</text>
+  <text x="36" y="566" fill="#9c8fb0" font-size="11.5">Имя есть только у одного адреса — ник с OpenSea. Остальные Arkham не подписывает: это свежие</text>
+  <text x="36" y="582" fill="#9c8fb0" font-size="11.5">кошельки без публичной истории, и связывает их между собой только источник денег.</text>
 </svg>
 <div class="cap">Сплошные стрелки — переводы, которые видно в блокчейне напрямую. Пунктирная серая —
 связь, которая была в исходном разборе по данным Arkham, но которую я не смог переподтвердить
@@ -187,58 +178,52 @@
 <div class="who">
   <div class="role">Покупатель · 10,95%</div>
   <div class="nm">Тот, кто скупал 24 и 27 июля</div>
-  <a class="addr" href="https://etherscan.io/address/0xa06ad2e0339375124d255f1fab201964ef707e18">0xa06ad2e0339375124d255f1fab201964ef707e18</a>
+  <a class="addr" href="https://intel.arkm.com/explorer/address/0xa06ad2e0339375124d255f1fab201964ef707e18">0xa06ad2e0339375124d255f1fab201964ef707e18</a>
   <div class="meta">651 377 WGNK. Подписи от Arkham нет, но на OpenSea адрес известен как
   <b>cryptochaoswar</b>. Кроме WGNK на балансе висит большое количество фиктивных токенов —
-  их рассылают всем подряд, они ничего не стоят и в расчёт не идут.
-  <a class="ml" href="https://intel.arkm.com/explorer/address/0xa06ad2e0339375124d255f1fab201964ef707e18">открыть в Arkham</a></div>
+  их рассылают всем подряд, они ничего не стоят и в расчёт не идут. <a class="ml" href="https://etherscan.io/address/0xa06ad2e0339375124d255f1fab201964ef707e18">то же на Etherscan</a></div>
 </div>
 
 <div class="who">
   <div class="role">Раздающий кошелёк</div>
   <div class="nm">Источник денег для всей группы</div>
-  <a class="addr" href="https://etherscan.io/address/0x3176f330533f88d1cf300f2ebeadde28495656cf">0x3176f330533f88d1cf300f2ebeadde28495656cf</a>
+  <a class="addr" href="https://intel.arkm.com/explorer/address/0x3176f330533f88d1cf300f2ebeadde28495656cf">0x3176f330533f88d1cf300f2ebeadde28495656cf</a>
   <div class="meta">Работает с декабря 2019. Именно с него 24 июля ушли $30 000 покупателю
   и 16 июля — $500 000 на отдельный адрес. Arkham подписывает его как «Jocy Lin, IOSG Ventures»
-  со знаком вопроса: это предположение нейросети, помеченное самим сервисом как ненадёжное.
-  <a class="ml" href="https://intel.arkm.com/explorer/address/0x3176f330533f88d1cf300f2ebeadde28495656cf">открыть в Arkham</a></div>
+  со знаком вопроса: это предположение нейросети, помеченное самим сервисом как ненадёжное. <a class="ml" href="https://etherscan.io/address/0x3176f330533f88d1cf300f2ebeadde28495656cf">то же на Etherscan</a></div>
 </div>
 
 <div class="who">
   <div class="role">Кошелёк без единой сделки</div>
   <div class="nm">$500 473 USDT лежат 11 дней</div>
-  <a class="addr" href="https://etherscan.io/address/0xBdC903f111439e0AE193B33cbfe4143b7ed62BdE">0xBdC903f111439e0AE193B33cbfe4143b7ed62BdE</a>
+  <a class="addr" href="https://intel.arkm.com/explorer/address/0xBdC903f111439e0AE193B33cbfe4143b7ed62BdE">0xBdC903f111439e0AE193B33cbfe4143b7ed62BdE</a>
   <div class="meta">16 июля получил $100 пробным переводом, а через шесть минут — $500 000.
-  С тех пор ни одной покупки. Проверяется в один клик: баланс USDT виден на странице адреса.
-  <a class="ml" href="https://intel.arkm.com/explorer/address/0xBdC903f111439e0AE193B33cbfe4143b7ed62BdE">открыть в Arkham</a></div>
+  С тех пор ни одной покупки. Проверяется в один клик: баланс USDT виден на странице адреса. <a class="ml" href="https://etherscan.io/address/0xBdC903f111439e0AE193B33cbfe4143b7ed62BdE">то же на Etherscan</a></div>
 </div>
 
 <div class="who">
   <div class="role">Первый закупщик · 4,19%</div>
   <div class="nm">Набирал позицию месяцем раньше</div>
-  <a class="addr" href="https://etherscan.io/address/0x244186297b43ba43c92d68efe78c04170fbc0b10">0x244186297b43ba43c92d68efe78c04170fbc0b10</a>
+  <a class="addr" href="https://intel.arkm.com/explorer/address/0x244186297b43ba43c92d68efe78c04170fbc0b10">0x244186297b43ba43c92d68efe78c04170fbc0b10</a>
   <div class="meta">Держит 249 092 WGNK и ещё $136 207 USDT, которые не пускает в дело.
-  Он же создал следующий адрес и оплатил ему газ — это и есть прямая связь между ними.
-  <a class="ml" href="https://intel.arkm.com/explorer/address/0x244186297b43ba43c92d68efe78c04170fbc0b10">открыть в Arkham</a></div>
+  Он же создал следующий адрес и оплатил ему газ — это и есть прямая связь между ними. <a class="ml" href="https://etherscan.io/address/0x244186297b43ba43c92d68efe78c04170fbc0b10">то же на Etherscan</a></div>
 </div>
 
 <div class="who">
   <div class="role">Третий держатель · 8,25%</div>
   <div class="nm">Адрес под одну задачу</div>
-  <a class="addr" href="https://etherscan.io/address/0xbd3ca5a43f72e45faf4b142832110842113dc9f8">0xbd3ca5a43f72e45faf4b142832110842113dc9f8</a>
+  <a class="addr" href="https://intel.arkm.com/explorer/address/0xbd3ca5a43f72e45faf4b142832110842113dc9f8">0xbd3ca5a43f72e45faf4b142832110842113dc9f8</a>
   <div class="meta">490 900 WGNK ровным числом и немного эфира на комиссии. Больше на адресе
-  нет ничего — он заведён специально под эту позицию.
-  <a class="ml" href="https://intel.arkm.com/explorer/address/0xbd3ca5a43f72e45faf4b142832110842113dc9f8">открыть в Arkham</a></div>
+  нет ничего — он заведён специально под эту позицию. <a class="ml" href="https://etherscan.io/address/0xbd3ca5a43f72e45faf4b142832110842113dc9f8">то же на Etherscan</a></div>
 </div>
 
 <div class="who">
   <div class="role">Вне группы · 6,64%</div>
   <div class="nm">Четвёртый крупный держатель</div>
-  <a class="addr" href="https://etherscan.io/address/0x7401ff4d89f4f7dc467562b6a8f3cc119f889088">0x7401ff4d89f4f7dc467562b6a8f3cc119f889088</a>
+  <a class="addr" href="https://intel.arkm.com/explorer/address/0x7401ff4d89f4f7dc467562b6a8f3cc119f889088">0x7401ff4d89f4f7dc467562b6a8f3cc119f889088</a>
   <div class="meta">395 274 WGNK. Прямых переводов от раздающего кошелька нет, поэтому в 23,39%
   он не входит. Зашёл через мост NEAR Intents — тем же редким маршрутом, что и первый закупщик.
-  Совпадение или ещё одна ветка — пока неясно.
-  <a class="ml" href="https://intel.arkm.com/explorer/address/0x7401ff4d89f4f7dc467562b6a8f3cc119f889088">открыть в Arkham</a></div>
+  Совпадение или ещё одна ветка — пока неясно. <a class="ml" href="https://etherscan.io/address/0x7401ff4d89f4f7dc467562b6a8f3cc119f889088">то же на Etherscan</a></div>
 </div>
 
 <h2>Кто у токена в держателях</h2>
@@ -304,6 +289,16 @@
 </ul>
 <p>Признаки указывают на другое: позиция набирается порциями, разложена по свежим адресам,
 каждый из которых держит один токен и немного газа, и ни разу не сокращалась.</p>
+
+<div class="box">
+<h3>Если открыли адрес и увидели чужое название</h3>
+<p>У четырёх из шести адресов разбора <b>вообще нет подписи в Arkham</b> — сервис показывает
+голый номер. Имя есть только у покупателя (ник с OpenSea) и у раздающего кошелька
+(и то со знаком вопроса).</p>
+<p style="margin-bottom:0">Если при переходе видно название какого-то протокола — скорее всего
+открыт похожий адрес, а не тот. Проверьте совпадение целиком: у адресов из разбора есть
+двойники, отличающиеся серединой. Об этом ниже.</p>
+</div>
 
 <h2>Отдельно: адреса-клоны</h2>
 <p>В истории переводов раздающего кошелька видны десятки транзакций по $100–300 от адресов
@@ -402,8 +397,8 @@
 но по остаткам на адресах эта цифра не сходится — подтвердить её я не смог.</li>
 <li>Прямая связь раздающего кошелька с первым закупщиком: в Arkham она есть,
 в открытых источниках я её не переподтвердил.</li>
-<li><a class="ml" href="https://etherscan.io/address/0x9813e9d3C95A30C51e6d449870C09a64B9FaDe82">0x9813e9d3C95A30C51e6d449870C09a64B9FaDe82</a> —
-ещё один адрес, получавший крупные суммы от того же раздающего кошелька. Не разобран.</li>
+<li><b>Проверено и закрыто:</b> <a class="ml" href="https://intel.arkm.com/explorer/address/0x9813e9d3C95A30C51e6d449870C09a64B9FaDe82">0x9813e9d3C95A30C51e6d449870C09a64B9FaDe82</a> —
+адрес пустой, на балансе $10. Второй позиции там нет.</li>
 <li>Настоящий владелец. Подпись «Jocy Lin, IOSG» можно оспорить или подтвердить
 через форму Arkham — этого не делалось.</li>
 </ul>
