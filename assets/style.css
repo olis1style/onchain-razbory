@@ -44,19 +44,28 @@ p{margin:0 0 16px}
 .box h3{margin-top:0}
 .box p:last-child,.box ul:last-child{margin-bottom:0}
 
-/* «объясняю просто» */
-.simple{border-left:3px solid var(--acc);background:#0e1526;border-radius:0 12px 12px 0;
-  padding:16px 20px;margin:20px 0;font-size:16px;color:#c6cfe2}
-.simple b{color:var(--txt)}
-.simple::before{content:"Простыми словами";display:block;
-  font:600 10px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;
-  color:var(--acc);margin-bottom:9px}
+/* ссылка «назад» в теле страницы */
+.backlink{display:inline-block;font-size:14px;color:var(--dim);text-decoration:none;
+  margin-bottom:22px;border:1px solid var(--line);border-radius:8px;padding:7px 13px}
+.backlink:hover{color:var(--txt);border-color:#3a4670}
 
 /* адрес */
 .addr{font-family:var(--mono);font-size:12.5px;word-break:break-all;
   background:#0d1120;border:1px solid var(--line);border-radius:8px;
-  padding:9px 12px;display:block;margin:8px 0;color:var(--yel)}
+  padding:9px 12px;display:block;margin:8px 0;color:var(--yel);text-decoration:none}
+a.addr:hover{border-color:#4a5a2c;background:#12160f}
+a.addr:after{content:" ↗";color:var(--dim)}
 .mono{font-family:var(--mono);font-size:.88em}
+a.ml{font-family:var(--mono);font-size:.85em;color:var(--yel);text-decoration:none;
+  border-bottom:1px dotted #5c5326;word-break:break-all}
+a.ml:hover{color:#ffe0a0}
+
+/* блок адреса с ролью */
+.who{background:var(--panel);border:1px solid var(--line);border-radius:12px;
+  padding:16px 18px;margin:14px 0}
+.who .role{font:600 10px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--dim)}
+.who .nm{font-size:17px;font-weight:650;margin:7px 0 9px}
+.who .meta{font-size:14px;color:var(--dim);margin-top:9px;line-height:1.55}
 
 /* цифры */
 .stats{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));margin:22px 0}
@@ -109,18 +118,21 @@ p{margin:0 0 16px}
 ul{padding-left:22px;margin:0 0 16px}
 li{margin-bottom:9px}
 
-/* схема */
-.flow{margin:24px 0}
-.fl-row{display:flex;align-items:stretch;gap:12px;margin-bottom:10px;flex-wrap:wrap}
-.fl{flex:1;min-width:180px;background:var(--panel);border:1px solid var(--line);
-  border-radius:12px;padding:14px 16px}
-.fl .t{font:700 13px/1.3 var(--mono);margin-bottom:6px}
-.fl .d{font-size:13.5px;color:var(--dim);line-height:1.45}
-.fl.hub{border-color:#5a3f8f;background:#161125}.fl.hub .t{color:var(--pur)}
-.fl.cash{border-color:#5a2334;background:#190c11}.fl.cash .t{color:var(--red)}
-.fl.buy{border-color:#245243;background:#0c1a15}.fl.buy .t{color:var(--grn)}
-.fl.cex{border-color:#4a3d1c;background:#1c1810}.fl.cex .t{color:var(--yel)}
-.arrow{text-align:center;color:var(--dim);font-size:20px;margin:2px 0 8px;line-height:1}
+/* граф потоков */
+.graph{background:var(--panel);border:1px solid var(--line);border-radius:14px;
+  padding:14px 12px 8px;margin:24px 0;overflow-x:auto}
+.graph svg{display:block;width:100%;min-width:880px;height:auto}
+.graph .cap{font-size:13.5px;color:var(--dim);padding:10px 6px 2px;line-height:1.5;min-width:880px}
+
+/* таблица сделок */
+.tx{width:100%;border-collapse:collapse;font-size:14px;margin:16px 0}
+.tx th{text-align:left;font:600 10px/1.3 var(--mono);letter-spacing:.12em;color:var(--dim);
+  text-transform:uppercase;padding:10px 10px;border-bottom:1px solid var(--line)}
+.tx td{padding:10px;border-bottom:1px solid #1a2035;font-family:var(--mono);font-size:13px}
+.tx td.n{text-align:right}
+.tx tr.hl td{background:#101d18}
+.tx tfoot td{border-bottom:none;font-weight:700;color:var(--txt)}
+.tscroll{overflow-x:auto}
 
 /* список разборов на главной */
 .card-list{display:grid;gap:14px;margin:28px 0}
