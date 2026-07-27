@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="utf-8"><title>catch</title>
+<style>body{background:#0a0c14;color:#e8edf7;font:15px/1.5 -apple-system,sans-serif;padding:40px}
+#f{margin:20px 0}#log{font-family:monospace;font-size:13px;color:#8b96b0}</style></head>
+<body>
+<h1>Приёмник скриншотов</h1>
+<p>Служебная страница. Файл, брошенный в поле ниже, сразу скачивается в Загрузки.</p>
+<input type="file" id="f" accept="image/*">
+<div id="log">ожидание…</div>
+<script>
+const f=document.getElementById('f'), log=document.getElementById('log');
+f.addEventListener('change',()=>{
+  const file=f.files[0]; if(!file){log.textContent='пусто';return;}
+  const url=URL.createObjectURL(file);
+  const a=document.createElement('a');
+  a.href=url; a.download=(window.SHOT_NAME||file.name||'shot')+'';
+  document.body.appendChild(a); a.click();
+  setTimeout(()=>{URL.revokeObjectURL(url);a.remove();},2000);
+  log.textContent='скачан: '+a.download+' · '+file.type+' · '+file.size+' байт';
+});
+</script>
+</body></html>
