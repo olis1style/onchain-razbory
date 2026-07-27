@@ -13,7 +13,7 @@ body{margin:0;background:var(--bg);color:var(--txt);font-family:var(--sans);
   min-height:100vh;display:flex;flex-direction:column}
 .wrap{width:100%;max-width:1440px;margin:0 auto;padding:32px 28px 40px;flex:1}
 /* текст держим читаемой ширины, схемы и графики — во всю ширину */
-.wrap > *:not(.chart):not(.graph):not(.tscroll){max-width:820px}
+.wrap > *:not(.chart):not(.graph):not(.tscroll):not(.live){max-width:820px}
 .wide{max-width:1440px}
 a{color:var(--acc)}
 
